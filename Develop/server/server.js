@@ -17,11 +17,3 @@ app.use(express.json());
 require('./routes/htmlRoutes')(app);
 
 app.listen(PORT, () => console.log(`Now listening on port: ${PORT}`));
-
-// app.use(express.static('public', {
-//     setHeaders: (res, path) => {
-//         if (path.endsWith('.png')) {
-//             res.setHeader('Content-Type', 'image/png');
-//         }
-//     }
-// }));
